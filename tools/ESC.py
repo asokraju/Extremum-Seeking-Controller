@@ -22,7 +22,7 @@ class ExtremumSeekingController():
         a, b : gains
         PhaseShift: Phase shift of the sine
     """
-    def __init__(self, Omega_h:float, Omega_l:float, Omega:float, a:float, b:float, PhaseShift:float,  SamplingTime:float, IntegratorGain:float, init_value:float=None):
+    def __init__(self, Omega_l:float, Omega_h:float, Omega:float, a:float, b:float, PhaseShift:float,  SamplingTime:float, IntegratorGain:float, init_value:float=None):
         super(ExtremumSeekingController, self).__init__()
         # High pass filter frequency: rad/sec
         self.Omega_h = Omega_h
